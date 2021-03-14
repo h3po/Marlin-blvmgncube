@@ -1,3 +1,37 @@
+# Customisations in this repo
+
+You may use this repo as the starting point for your BLV mgn Cube kit build. However this configuration contains changes specific to my printer, such as a bltouch probe instead of the probe included with the kit. Be careful to adapt the config files to your printer or you will crash the nozzle. See changes below:
+
+## My Hardware
+* [BLV mgn cube design by Ben Levi](https://www.blvprojects.com/blv-mgn-cube-3d-printer)
+* [Frame lite kit from aliexpress](https://www.aliexpress.com/item/4000374263194.html)
+  * SKR 1.3 motherboard
+  * Bigtreetech "reprap discount" style 128x64 LCD
+  * X_max, Y_max limit switches
+  * 100mm bowden extruder
+  * E3D v6 clone hotend
+* Replaced heated bed
+  * Aluminium plate 5x310x310mm
+  * [Wham bam flexible build plate](https://whambamsystems.com/flexible-build-system)
+  * Keenovo 230V 750W silicone heater
+  * Omron 10A solid state relay
+* Replaced X and Y 0.9° steppers with 1.8° steppers because of noise issues with tmc hybrid mode
+  * [Noise video](https://www.youtube.com/watch?v=A7GWkTTyzW0)
+  * [Marlin Ticket](https://github.com/MarlinFirmware/Marlin/issues/18286)
+  * [TMC library ticket](https://github.com/teemuatlut/TMCStepper/issues/132)
+* Replaced IR probe with bltouch probe
+
+## Software changes
+* Enabled non-default features
+  * G29 3x3 biliniear grid bed leveling
+  * G34 Z stepper auto alignment
+  * G35 bed tramming assistant
+  * M48 probe repeatability test
+  * M78 print counter
+  * M600 change filament
+  * M701 load filament
+  * M702 unload filament
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)

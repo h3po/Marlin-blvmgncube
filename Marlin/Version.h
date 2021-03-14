@@ -46,7 +46,7 @@
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
  */
-//#define MACHINE_NAME "3D Printer"
+#define MACHINE_NAME "BLV mgn Cube"
 
 /**
  * The SOURCE_CODE_URL is the location where users will find the Marlin Source
@@ -54,12 +54,12 @@
  * has a distinct Github fork— the Source Code URL should just be the main
  * Marlin repository.
  */
-//#define SOURCE_CODE_URL "https://github.com/MarlinFirmware/Marlin"
+#define SOURCE_CODE_URL "https://github.com/h3po/Marlin-blvmgncube"
 
 /**
  * Default generic printer UUID.
  */
-//#define DEFAULT_MACHINE_UUID "cede2a2f-41a2-4748-9b12-c55c62f367ff"
+#define DEFAULT_MACHINE_UUID "6e935ace-dfb4-4293-a4fd-5000115a277b"
 
 /**
  * The WEBSITE_URL is the location where users can get more information such as
