@@ -1,7 +1,10 @@
 # Customisations in this repo
 
-You may use this repo as the starting point for your BLV mgn Cube kit build. However this configuration contains changes specific to my printer, such as a bltouch probe instead of the probe included with the kit. Be careful to adapt the config files to your printer or you will crash the nozzle. See changes below:
+You may use this repo as the starting point for your BLV mgn Cube kit build. However this configuration contains changes specific to my printer, so be careful to adapt the config files to your printer. See changes below.
 
+*WARNING! Address at least these configuration changes to not burn your house down or crash your printer:*
+  * My HEATER_0_PIN and HEATER_BED_PIN are swapped in order to use the larger Mosfet for a 50W heater cartridge and the other for just switching an external SSR [pins_BTT_SKR_common.h](Marlin\src\pins\lpc1768\pins_BTT_SKR_common.h#L74)
+  
 ## My Hardware
 * [BLV mgn cube design by Ben Levi](https://www.blvprojects.com/blv-mgn-cube-3d-printer)
 * [Frame lite kit from aliexpress](https://www.aliexpress.com/item/4000374263194.html)
